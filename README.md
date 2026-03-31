@@ -1,5 +1,4 @@
 # n8n-crm-sync-gmu
-```markdown
 ![CRM Sync Cover](ВСТАВИТЬ_ССЫЛКУ_НА_ОБЛОЖКУ_2)
 
 # Industrial CRM Sync: Паттерн Get-Merge-Update (GMU)
