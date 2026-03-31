@@ -28,16 +28,13 @@
 ```mermaid
 sequenceDiagram
     participant User
-    participant n8n Orchestrator
-    participant CRM Weeek
-    User->>n8n Orchestrator: "Перенеси дедлайн на 15:00"
-    n8n Orchestrator->>CRM Weeek: GET current_task (State)
-    Note over n8n Orchestrator: Atomic Merge (Old Date + New Time)
-    n8n Orchestrator->>CRM Weeek: PATCH (Atomic Update)
-    CRM Weeek-->>User: "Успешно обновлено"
-
----
-
+    participant "n8n Orchestrator" as n8n
+    participant "CRM Weeek" as CRM
+    User->>n8n: "Перенеси дедлайн на 15:00"
+    n8n->>CRM: GET current_task (State)
+    Note over n8n: Atomic Merge<br/>(Old Date + New Time)
+    n8n->>CRM: PATCH (Atomic Update)
+    CRM-->>User: "Успешно обновлено"
 🛡 4. Безопасность и Отказоустойчивость
 Интеграция с российской CRM Weeek. Весь workflow изолирован в локальном Docker-контейнере. Реализована Fallback-логика: при сбое API запрос ставится в очередь (Queue) и повторяется автоматически.
 🗣 Мнение Операционного Директора: "Денис предложил этот паттерн GMU. Сначала казалось избыточным, но по факту — это первая интеграция, которая не потеряла ни одного дедлайна и работает монолитно под нагрузкой."
