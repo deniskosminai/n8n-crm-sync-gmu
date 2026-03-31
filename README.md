@@ -35,7 +35,7 @@ sequenceDiagram
     Note over n8n: Atomic Merge<br/>(Old Date + New Time)
     n8n->>CRM: PATCH (Atomic Update)
     CRM-->>User: "Успешно обновлено"
-
+```
 
 ## 🛡 4. Безопасность и Отказоустойчивость
 
