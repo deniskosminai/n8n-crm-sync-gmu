@@ -48,6 +48,7 @@ class TaskUpdateIntent(BaseModel):
     new_date: Optional[str] = Field(None, description="Новая дата, только если явно указана пользователем")
     new_time: Optional[str] = Field(None, description="Новое время, только если явно указано пользователем")
 Если new_date равно None, система извлечет старую дату из CRM (этап GET) и склеит её с новым временем (этап MERGE).
+```
 
 ## 🛠 3. Стек технологий
 **n8n (Self-hosted):** Визуальный оркестратор.
