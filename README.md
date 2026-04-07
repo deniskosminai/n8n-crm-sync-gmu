@@ -83,13 +83,19 @@ sequenceDiagram
 <br>
 <i>Рис 1. Архитектура интеграционного слоя в n8n (20+ узлов маршрутизации, NLP-распознавания и валидации).</i>
 </p>
+<p align="center">
+<img src="https://github.com/deniskosminai/n8n-crm-sync-gmu/blob/main/img/Screenshot_88.jpg" width="80%" alt="n8n Workflow">
+<br>
+<i>Рис 2. NLP-маршрутизация: извлечение намерений (Intents) из живой речи пользователя.</i>
+</p>
 <div align="center">
   <img src="https://github.com/deniskosminai/n8n-crm-sync-gmu/blob/main/img/Screenshot_101.jpg" width="48%" alt="CRM Sync Proof 1">
   <img src="https://github.com/deniskosminai/n8n-crm-sync-gmu/blob/main/img/Screenshot_99.jpg" width="48%" alt="CRM Sync Proof 2">
 </div>
 <br>
-<i>Рис 2. Двусторонняя синхронизация: 100% совпадение ID и статусов задач (#29, #31, #32) в локальной таблице и внешней CRM Weeek.</i>
+<i>Рис 3. Двусторонняя синхронизация: 100% совпадение ID и статусов задач в локальной таблице и внешней CRM Weeek.</i>
 </p>
+
 
 **🤝 Как мы можем сотрудничать?**
 - ✅ Настрою интеграцию ваших систем без "спагетти-кода" и конфликтов записи.
