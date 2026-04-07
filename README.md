@@ -1,5 +1,5 @@
 # n8n-crm-sync-gmu
-![CRM Sync Cover](ВСТАВИТЬ_ССЫЛКУ_НА_ОБЛОЖКУ_2)
+![CRM Sync Cover](https://github.com/deniskosminai/n8n-crm-sync-gmu/blob/main/img/INDUSTRIAL.png)
 
 # Industrial CRM Sync: Паттерн Get-Merge-Update (GMU)
 
